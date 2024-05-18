@@ -2,5 +2,4 @@ requests
 pytest
 pytest-steps
 jsonschema
-pytest-dist
 pytest-html
