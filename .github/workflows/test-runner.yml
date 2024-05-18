@@ -39,7 +39,7 @@ jobs:
         if: success() || failure()  
         with:
           name: test-results
-          path: 
+          path: |
                 results.xml
                 report.html
                 assert
