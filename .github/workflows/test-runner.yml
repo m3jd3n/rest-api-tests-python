@@ -28,3 +28,9 @@ jobs:
           chmod +x -R ${{ github.workspace }}
           export PYTHONPATH=${PYTHONPATH}:${{ github.workspace }}
           python -m pytest -s tests/part_01/test_users.py
+      - name:  Create Test Summary
+        uses: test-summary//action@dist
+        if: success() || failure()
+        with:
+          paths: results.xml
+          
